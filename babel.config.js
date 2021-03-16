@@ -2,7 +2,7 @@ module.exports = function (api) {
   const presets = [
     '@babel/preset-env',
     '@babel/preset-react',
-    '@babel/preset-flow'
+    '@babel/preset-flow',
   ];
   const plugins = [
     '@babel/plugin-transform-runtime',
@@ -16,6 +16,6 @@ module.exports = function (api) {
 
   return {
     presets,
-    plugins
+    plugins,
   };
 };
