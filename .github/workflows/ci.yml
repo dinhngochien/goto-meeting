@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: Test
+    name: Lint
     runs-on: ubuntu-latest
     env:
       NODE_ENV: test
