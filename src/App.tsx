@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Login from './components/auth/Login';
+import Logout from './components/auth/Logout';
 
 function App() {
+  const loginToken = localStorage.getItem('authToken');
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        { !loginToken ? <Login /> : <Logout /> }
       </header>
     </div>
   );
